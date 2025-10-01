@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zerion</title>
+
+  <!--FAVICON-->
+  <link rel="icon" href="..assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header> <!--HEADER-->
+    <nav class="navbar navbar-expand-lg background-header"> <!--NAVBAR-->
+      <div class="container-fluid header-gap">
+        <img class="brand-logo" src="../assets/zerion.svg" alt="Logotipo de Zerion"> <!--LOGOTIPO-->
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--MENU-->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link header-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link" href="../pages/accesorios.html">Accesorios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link" href="../pages/producto.html">Evo Max</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link header-link" href="../pages/tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link" href="../pages/quienes-somos.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search"> <!--SEARCH-->
+            <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search" />
+            <button class="btn header-button" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container-contact-form"> <!--CONTACT FORM-->
+      <div class="contact-title">
+        <h1>Contáctanos</h1>
+        <h6>¿Tienes alguna duda o consulta? Estamos aquí para ayudarte. Completa el formulario a continuación y nos
+          pondremos en contacto contigo lo antes posible.</h6>
+      </div>
+
+      <form class="row g-3 form-contact">
+        <div class="row"> <!--NOMBRES Y APELLIDOS-->
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Tu nombre" aria-label="Nombres">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Tu apellido" aria-label="Apeliidos">
+          </div>
+        </div>
+
+        <!--EMAIL-->
+        <div class="row">
+          <div class="col-md-12">
+            <label for="inputEmail4" class="form-label">
+              <p>Email</p>
+            </label>
+            <input type="email" class="form-control" placeholder="juan@ejemplo.com" id="inputEmail4">
+          </div>
+        </div>
+
+        <!--UBICACIÓN-->
+        <div class="row">
+          <div class="col-md-8">
+            <label for="inputState" class="form-label">
+              <p>País</p>
+            </label>
+            <select id="inputState" class="form-select">
+              <option selected>Seleccionar...</option>
+              <option>Argentina</option>
+              <option>Chile</option>
+              <option>México</option>
+              <option>Venezuela</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inputZip" class="form-label">
+              <p>Código Postal</p>
+            </label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">¿En qué podemos ayudarte?</label>
+          </div>
+        </div>
+
+        <div class="row"> <!--CHECKBOX-->
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="privacidad">
+              <label class="form-check-label" for="privacidad">
+                <p>Acepto la Política de Privacidad</p>
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="novedades">
+              <label class="form-check-label" for="novedades">
+                <p>Deseo recibir novedades por correo electrónico</p>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!--BOTÓN-->
+        <button type="submit" class="button button_primary">Enviar</button>
+      </form>
+      </div>
+
+      <div class="card-text-center contact-card"> <!--CONTACT CARD-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#27B79A"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-photo-pin">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M15 8h.01" />
+          <path d="M12.5 21h-6.5a3 3 0 0 1 -3 -3v-12a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v5.5" />
+          <path d="M3 16l5 -5c.928 -.893 2.072 -.893 3 0l2.5 2.5" />
+          <path
+            d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+          <path d="M19 18v.01" />
+        </svg>
+        <h4>Prefieres hablar con nosotros en persona?</h4>
+        <h6> Visita nuestra tienda física durante el horario comercial.
+          Nuestro equipo estará encantado de ayudarte con cualquier consulta o asistencia que necesites.</p>
+          <p>Calle Ejemplo 1256, Buenos Aires, Argentina</p>
+      </div>
+    </section>
+  </main>
+
+  <footer> <!--FOOTER-->
+    <div class="footer-content">
+
+      <section class="footer-brand"> <!--LOGOTIPO Y REDES-->
+        <img class="brand-logo" src="../assets/zerion.svg" alt="Logotipo de Zerion">
+        <p>Síguenos en nuestras redes sociales</p>
+        <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="../assets/instagram.svg"
+            alt="Instagram"></a>
+        <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="../assets/facebook.svg"
+            alt="Facebook"></a>
+        <a href="http://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src="../assets/youtube.svg"
+            alt="Youtube"></a>
+      </section>
+
+      <section class="footer-links"> <!--LINKS-->
+        <div class="footer-links-section">
+          <p>Descubrir</p>
+          <ul>
+            <li><a href="../pages/producto.html">Evo Max</a></li>
+            <li><a href="../pages/producto.html">Volt X</a></li>
+            <li><a href="../pages/producto.html">Neon Pro</a></li>
+            <li><a href="../pages/producto.html">Go Max</a></li>
+            <li><a href="../pages/producto.html">Infinity</a></li>
+            <li><a href="../pages/accesorios.html">Accesorios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-section">
+          <p>Acerca de nosotros</p>
+          <ul>
+            <li><a href="../pages/quienes-somos.html">Sobre nosotros</a></li>
+            <li><a href="../pages/quienes-somos.html">Comunidad</a></li>
+            <li><a href="../pages/quienes-somos.html">Trabaja con nosotros</a></li>
+            <li><a href="../pages/quienes-somos.html">Noticias</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-section">
+          <p>Soporte</p>
+          <ul>
+            <li><a href="../pages/contacto.html">Chat Online</a></li>
+            <li><a href="../pages/contacto.html">Botón de Arrepentimiento</a></li>
+            <li><a href="../pages/contacto.html">Cambios y Devoluciones</a></li>
+            <li><a href="../pages/contacto.html">Preguntas frecuentes</a></li>
+            <li><a href="../pages/contacto.html">Reviews</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <p class="footer-copyright">© 2025 Zerion. Todos los derechos reservados.</p> <!--COPYRIGHT-->
+  </footer>
+
+  <!--BOOTSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

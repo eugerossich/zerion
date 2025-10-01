@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zerion</title>
+
+  <!--FAVICON-->
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header> <!--HEADER-->
+    <nav class="navbar navbar-expand-lg background-header"> <!--NAVBAR-->
+      <div class="container-fluid header-gap">
+        <img class="brand-logo" src="./assets/zerion.svg" alt="Logotipo de Zerion"> <!--LOGOTIPO-->
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--MENU-->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link header-link" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link" href="./pages/accesorios.html">Accesorios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link" href="./pages/producto.html">Evo Max</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link header-link" href="./pages/tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link" href="./pages/quienes-somos.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search"> <!--SEARCH-->
+            <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search" />
+            <button class="btn header-button" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card text-bg-dark img-overlay-border"> <!-- HERO IMAGE-OVERLAY-->
+      <img src="./assets/hero.webp" class="card-img img-hero" alt="...">
+      <div class="card-img-overlay hero-text">
+        <h1>Celulares Gaming de Alto Rendimiento</h1>
+        <h5>Cada partida cobra vida con celulares gamer que combinan tecnología avanzada, respuesta ultra rápida y un
+          diseño pensado para jugadores exigentes.</h5>
+        <div class="cta-buttons">
+          <a href="./pages/tienda.html" class="button button_primary">Ver nuestros celulares</a> <a
+            href="./pages/contacto.html" class="button button_secondary">Visita nuestra tienda</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-1column"> <!--BENEFITS-->
+      <h2>Gaming en otra dimensión</h2>
+      <div class="beneficios-grid-productos">
+        <img src="./assets/beneficios-graficos.png" class=grid-area-graficos
+          alt="Celular gamer con pantalla NeoVision OLED 180 Hz mostrando gráficos AAA en alta definición">
+        <img src="./assets/beneficios-enfriamiento.png" class=grid-area-enfriamiento
+          alt="Sistema CryoFlow 5D Cooling en celular gaming con microcanales líquidos y disipación térmica avanzada">
+        <img src="./assets/beneficios-bateria.png" class=grid-area-bateria
+          alt="Batería de larga duración con energía optimizada para largas horas de juego en celular gamer">
+        <img src="./assets/beneficios-diseno.png" class=grid-area-diseno
+          alt="Celular gaming con diseño premium y acabados modernos en cámara trasera">
+        <img src="./assets/beneficios-sonido.png" class=grid-area-sonido
+          alt="Experiencia de sonido 3D inmersivo en celular gamer con altavoces optimizados para gaming">
+      </div>
+    </section>
+
+    <section class="carousel"> <!--CAROUSEL-->
+      <div class="title-carousel">
+        <div class="title-text">
+          <h2>Descubrí lo nuevo</h2>
+          <h3>El futuro del gaming móvil</h3>
+        </div>
+
+        <div class="carousel-arrows">
+          <button class=arrow onclick="scrollCarousel(-1)">←</button>
+          <button class=arrow onclick="scrollCarousel(1)">→</button>
+        </div>
+      </div>
+
+      <div id="carousel" class="carousel-product">
+        <article class=card-product>
+          <img src="./assets/evo-max.webp" alt="Una imagen del celular Evo max" loading="lazy">
+          <h3>Evo Max</h3>
+          <h4>$1.099.999</h4>
+          <a href="./pages/producto.html" class="button button_primary">Comprar ahora</a>
+        </article>
+
+        <article class="card-product">
+          <img src="./assets/evo-max.webp" alt="Una imagen del celular Volt X">
+          <h3>Volt X</h3>
+          <h4>$1.099.999</h4>
+          <a href="./pages/evo-max.webp" class="button button_primary">Comprar ahora</a>
+        </article>
+
+        <article class="card-product">
+          <img src="./assets/evo-max.webp" alt="Una imagen del celular Neon Pro" loading="lazy">
+          <h3>Neon Pro</h3>
+          <h4>$1.099.999</h4>
+          <a href="./pages/evo-max.webp" class="button button_primary">Comprar ahora</a>
+        </article>
+
+        <article class="card-product">
+          <img src="./assets/evo-max.webp" alt="Una imagen del celular Go Max" loading="lazy">
+          <h3>Go Max</h3>
+          <h4>$1.099.999</h4>
+          <a href="./pages/producto.html" class="button button_primary">Comprar ahora</a>
+        </article>
+
+        <article class="card-product">
+          <img src="./assets/evo-max.webp" alt="Una imagen del celular Infinity" loading="lazy">
+          <h3>Infinity</h3>
+          <h4>$1.099.999</h4>
+          <a href="./pages/producto.html" class="button button_primary">Comprar ahora</a>
+        </article>
+
+      </div>
+
+      <!--Javascript-->
+      <script>
+        const carousel = document.getElementById("carousel");
+
+        function scrollCarousel(direction) {
+          const card = carousel.querySelector(".card-product");
+          if (!card) return;
+
+          const cardWidth = card.getBoundingClientRect().width + 24; // 24px de gap
+          carousel.scrollBy({
+            left: direction * cardWidth,
+            behavior: "smooth"
+          });
+        }
+      </script>
+    </section>
+
+
+    <section class="container-2column"><!--CTA-->
+      <img src="./assets/celular-evo.webp" alt="Un celular con un videojuego de acción mostrando gráficos AAA en alta definición en su pantalla" loading="lazy">
+      <div class="cta-content">
+        <h2>Evo Max fusiona rendimiento extremo, enfriamiento inteligente y diseño elegante</h2>
+        <h5>Sumate a la nueva era del gaming móvil con Evo Max. Diseño premium, potencia real, y enfriamiento inteligente para jugar sin límites.</h5>
+        <div class="cta-buttons">
+          <a href="./pages/producto.html" class="button button_primary">Ver especificaciones</a> <a
+            href="./pages/accesorios.html" class="button button_secondary">Accesorios</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card text-bg-dark img-overlay-border"> <!--IMAGE-OVERLAY-->
+      <div class="card-img-overlay img-overlay-text">
+        <h2 class="card-title">Llevá tu juego al próximo nivel</h2>
+        <h5 class="card-text">Experimentá el máximo poder en la palma de tu mano. Celulares diseñados para gamers que buscan velocidad, gráficos inmersivos y estilo sin límites.</h5>
+        <div class="doble-button">
+          <a href="./pages/producto.html" class="button button_primary">Quiero el mío</a> 
+          <a href="./pages/contacto.html" class="button button_secondary">Visita nuestra tienda</a>
+        </div>
+      </div>
+      <img src="./assets/joystick.webp" class="card-img img-overlay-height" alt="Imagen de un joystick para celular" loading="lazy">
+    </section>
+  </main>
+
+  <footer> <!--FOOTER-->
+    <div class="footer-content">
+      
+      <section class="footer-brand"> <!--LOGOTIPO Y REDES-->
+        <img class="brand-logo" src="./assets/zerion.svg" alt="Logotipo de Zerion"> 
+        <p>Síguenos en nuestras redes sociales</p>
+        <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="./assets/instagram.svg" alt="Instagram"></a>
+        <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="./assets/facebook.svg" alt="Facebook"></a>
+        <a href="http://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src="./assets/youtube.svg" alt="Youtube"></a>
+      </section>
+
+      <section class="footer-links"> <!--LINKS-->
+        <div class="footer-links-section">
+          <p>Descubrir</p>
+          <ul>
+            <li><a href="./pages/producto.html">Evo Max</a></li>
+            <li><a href="./pages/producto.html">Volt X</a></li>
+            <li><a href="./pages/producto.html">Neon Pro</a></li>
+            <li><a href="./pages/producto.html">Go Max</a></li>
+            <li><a href="./pages/producto.html">Infinity</a></li>
+            <li><a href="./pages/accesorios.html">Accesorios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-section">
+          <p>Acerca de nosotros</p>
+          <ul>
+            <li><a href="./pages/quienes-somos.html">Sobre nosotros</a></li>
+            <li><a href="./pages/quienes-somos.html">Comunidad</a></li>
+            <li><a href="./pages/quienes-somos.html">Trabaja con nosotros</a></li>
+            <li><a href="./pages/quienes-somos.html">Noticias</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-section">
+          <p>Soporte</p>
+          <ul>
+            <li><a href="./pages/contacto.html">Chat Online</a></li>
+            <li><a href="./pages/contacto.html">Botón de Arrepentimiento</a></li>
+            <li><a href="./pages/contacto.html">Cambios y Devoluciones</a></li>
+            <li><a href="./pages/contacto.html">Preguntas frecuentes</a></li>
+            <li><a href="./pages/contacto.html">Reviews</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <p class="footer-copyright">© 2025 Zerion. Todos los derechos reservados.</p> <!--COPYRIGHT-->
+  </footer>
+
+  <!--BOOTSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>

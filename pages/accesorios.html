@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zerion</title>
+
+  <!--FAVICON-->
+  <link rel="icon" href="..assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header> <!--HEADER-->
+    <nav class="navbar navbar-expand-lg background-header"> <!--NAVBAR-->
+      <div class="container-fluid header-gap">
+        <img class="brand-logo" src="../assets/zerion.svg" alt="Logotipo de Zerion"> <!--LOGOTIPO-->
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--MENU-->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link header-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link" href="../pages/accesorios.html">Accesorios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link" href="../pages/producto.html">Evo Max</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link header-link" href="../pages/tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link" href="../pages/quienes-somos.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link header-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search"> <!--SEARCH-->
+            <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search" />
+            <button class="btn header-button" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card text-bg-dark img-overlay-border"> <!-- HERO IMAGE-OVERLAY-->
+      <img src="../assets/accesorios.webp" class="card-img img-hero"
+        alt="Un conjunto de accesorios para celulares gamer">
+      <div class="card-img-overlay hero-text">
+        <h1>Accesorios oficiales para mejorar tu experiencia gamer</h1>
+        <h5>Complementá tu celular gamer con accesorios de alto rendimiento diseñados para llevar tu experiencia a otro
+          nivel.</h5>
+        <a href="../pages/contacto.html" class="button button_primary">Visita nuestra tienda</a>
+      </div>
+    </section>
+
+    <section class="container-1column"> <!--CAROUSEL ACCESORIES-->
+      <h2>Nuestros accesorios destacados</h2>
+
+      <div class=" carousel-accesories ">
+        <article class="card-accesories">
+          <img src="../assets/accesories-auricular.webp" alt="">
+          <h3>Auriculares Pro X</h3>
+          <h5>Audio espacial 3D, cancelación activa de ruido y micrófono con cancelación de voz. Comodidad para largas
+            sesiones.</h5>
+          <h4>$199.990</h4>
+          <div class="doble-button">
+            <a href="../pages/producto.html" class="button button_primary">Quiero el mío</a>
+            <a href="../pages/contacto.html" class="button button_secondary">Visita nuestra tienda</a>
+          </div>
+        </article>
+
+        <article class="card-accesories">
+          <img src="../assets/joystick-accesories.webp" alt="">
+          <h3>Control Joystick V2</h3>
+          <h5>Ergonomía optimizada, gatillos sensibles y mapeo táctil para respuestas ultra rápidas. Conexión estable.
+          </h5>
+          <h4>$129.990</h4>
+          <div class="doble-button">
+            <a href="../pages/producto.html" class="button button_primary">Quiero el mío</a>
+            <a href="../pages/contacto.html" class="button button_secondary">Visita nuestra tienda</a>
+          </div>
+        </article>
+
+        <article class="card-accesories">
+          <img src="../assets/accesories-smartwatch.webp" alt="">
+          <h3>Smartwatch XR Gaming</h3>
+          <h5>Pantalla AMOLED, modo rendimiento para juegos y notificaciones inteligentes con bajo consumo energético.
+          </h5>
+          <h4>$159.990</h4>
+          <div class="doble-button">
+            <a href="../pages/producto.html" class="button button_primary">Quiero el mío</a>
+            <a href="../pages/contacto.html" class="button button_secondary">Visita nuestra tienda</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="card text-bg-dark img-overlay-border"> <!--IMAGE-OVERLAY-->
+      <div class="card-img-overlay img-overlay-text">
+        <h2 class="card-title">Encontrá los accesorios en nuestra tienda</h2>
+        <h5 class="card-text">Probá los accesorios en persona o consultá disponibilidad en el local. Nuestro equipo te
+          asesora para elegir lo mejor para tu Evo Max.</h5>
+        <a href="../pages/contacto.html" class="button button_primary">Visita nuestra tienda</a>
+      </div>
+      <img src="../assets/gaming-smartphone.webp" class="card-img img-overlay-height" alt="Un celular con auriculares y joysticks" loading="lazy">
+    </section>
+  </main>
+
+  <footer> <!--FOOTER-->
+    <div class="footer-content">
+
+      <section class="footer-brand"> <!--LOGOTIPO Y REDES-->
+        <img class="brand-logo" src="../assets/zerion.svg" alt="Logotipo de Zerion"> 
+        <p>Síguenos en nuestras redes sociales</p>
+        <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="../assets/instagram.svg" alt="Instagram"></a>
+        <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="../assets/facebook.svg" alt="Facebook"></a>
+        <a href="http://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src="../assets/youtube.svg" alt="Youtube"></a>
+      </section>
+
+      <section class="footer-links"> <!--LINKS-->
+        <div class="footer-links-section">
+          <p>Descubrir</p>
+          <ul>
+            <li><a href="../pages/producto.html">Evo Max</a></li>
+            <li><a href="../pages/producto.html">Volt X</a></li>
+            <li><a href="../pages/producto.html">Neon Pro</a></li>
+            <li><a href="../pages/producto.html">Go Max</a></li>
+            <li><a href="../pages/producto.html">Infinity</a></li>
+            <li><a href="../pages/accesorios.html">Accesorios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-section">
+          <p>Acerca de nosotros</p>
+          <ul>
+            <li><a href="../pages/quienes-somos.html">Sobre nosotros</a></li>
+            <li><a href="../pages/quienes-somos.html">Comunidad</a></li>
+            <li><a href="../pages/quienes-somos.html">Trabaja con nosotros</a></li>
+            <li><a href="../pages/quienes-somos.html">Noticias</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-section">
+          <p>Soporte</p>
+          <ul>
+            <li><a href="../pages/contacto.html">Chat Online</a></li>
+            <li><a href="../pages/contacto.html">Botón de Arrepentimiento</a></li>
+            <li><a href="../pages/contacto.html">Cambios y Devoluciones</a></li>
+            <li><a href="../pages/contacto.html">Preguntas frecuentes</a></li>
+            <li><a href="../pages/contacto.html">Reviews</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <p class="footer-copyright">© 2025 Zerion. Todos los derechos reservados.</p> <!--COPYRIGHT-->
+  </footer>
+
+  <!--BOOTSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
