@@ -76,73 +76,47 @@
       </div>
     </section>
 
-    <section class="carousel container-1column"> <!--CAROUSEL-->
-      <div class="title-carousel">
-        <div class="title-text">
-          <h2>Descubrí lo nuevo</h2>
-          <h3>El futuro del gaming móvil</h3>
-        </div>
+    <section class="container-1column"> <!--CAROUSEL CELULARES-->
+      <h2>Accesorios</h2>
 
-        <div class="carousel-arrows">
-          <button class=arrow onclick="scrollCarousel(-1)">←</button>
-          <button class=arrow onclick="scrollCarousel(1)">→</button>
-        </div>
-      </div>
-
-      <div id="carousel" class="carousel-product">
-        <article class=card-product>
-          <img src="../assets/evo-max.webp" alt="Una imagen del celular Evo max" loading="lazy">
+      <div class="carousel-accesories ">
+        <article class="card-accesories">
+          <img src="../assets/evo-max.webp" alt="">
           <h3>Evo Max</h3>
-          <h4>$1.099.999</h4>
-          <a href="../pages/producto.html" class="button button_primary">Comprar ahora</a>
+          <h5>Potencia extrema y diseño icónico. Pantalla OLED+ a 180 Hz y batería de 6 200 mAh para jugar sin límites..</h5>
+          <h4>$1.199.999</h4>
+          <div class="doble-button">
+            <a href="../pages/producto.html" class="button button_primary">Quiero el mío</a>
+            <a href="../pages/contacto.html" class="button button_secondary">Visita nuestra tienda</a>
+          </div>
         </article>
 
-        <article class="card-product">
-          <img src="../assets/evo-max.webp" alt="Una imagen del celular Volt X">
+        <article class="card-accesories">
+          <img src="../assets/volt-x.webp" alt="">
           <h3>Volt X</h3>
+          <h5>Velocidad pura con chip de alto rendimiento y pantalla ultra fluida. Gaming sin interrupciones</h5>
           <h4>$1.099.999</h4>
-          <a href="../pages/evo-max.webp" class="button button_primary">Comprar ahora</a>
+          <div class="doble-button">
+            <a href="../pages/producto.html" class="button button_primary">Quiero el mío</a>
+            <a href="../pages/contacto.html" class="button button_secondary">Visita nuestra tienda</a>
+          </div>
         </article>
 
-        <article class="card-product">
-          <img src="../assets/evo-max.webp" alt="Una imagen del celular Neon Pro" loading="lazy">
+        <article class="card-accesories">
+          <img src="../assets/neon-pro.webp" alt="">
           <h3>Neon Pro</h3>
-          <h4>$1.099.999</h4>
-          <a href="../pages/evo-max.webp" class="button button_primary">Comprar ahora</a>
-        </article>
-
-        <article class="card-product">
-          <img src="../assets/evo-max.webp" alt="Una imagen del celular Go Max" loading="lazy">
-          <h3>Go Max</h3>
-          <h4>$1.099.999</h4>
-          <a href="../pages/producto.html" class="button button_primary">Comprar ahora</a>
-        </article>
-
-        <article class="card-product">
-          <img src="../assets/evo-max.webp" alt="Una imagen del celular Infinity" loading="lazy">
-          <h3>Infinity</h3>
-          <h4>$1.099.999</h4>
-          <a href="../pages/producto.html" class="button button_primary">Comprar ahora</a>
+          <h5>Rendimiento y estilo. Iluminación RGB, respuesta táctil precisa y un diseño audaz para cada partida </h5>
+          <h4>$999.999</h4>
+          <div class="doble-button">
+            <a href="../pages/producto.html" class="button button_primary">Quiero el mío</a>
+            <a href="../pages/contacto.html" class="button button_secondary">Visita nuestra tienda</a>
+          </div>
         </article>
 
       </div>
-
-      <!--Javascript-->
-      <script>
-        const carousel = document.getElementById("carousel");
-
-        function scrollCarousel(direction) {
-          const card = carousel.querySelector(".card-product");
-          if (!card) return;
-
-          const cardWidth = card.getBoundingClientRect().width + 24; // 24px de gap
-          carousel.scrollBy({
-            left: direction * cardWidth,
-            behavior: "smooth"
-          });
-        }
-      </script>
     </section>
+
+    
 
 
 
