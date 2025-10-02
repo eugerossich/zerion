@@ -513,7 +513,7 @@ body {
 
 .card-text-center:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 12px 24px rgba(0,0,0,0.5);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
 }
 
 /*-----PAGE QUIENES SOMOS------*/
@@ -525,12 +525,12 @@ body {
   text-align: center;
 }
 
-.card-quienes-somos{
-  flex: 1;          
-  min-width: 200px;     
+.card-quienes-somos {
+  flex: 1;
+  min-width: 200px;
   box-sizing: border-box;
- white-space: nowrap;
- padding: 4vh 4vw;
+  white-space: nowrap;
+  padding: 4vh 4vw;
 }
 
 .accordion-item,
@@ -541,15 +541,17 @@ body {
   box-shadow: none !important;
   outline: none !important;
 }
-.text-accordion{
-background-color: #111A1C;
-color: #E9F8F5;
+
+.text-accordion {
+  background-color: #111A1C;
+  color: #E9F8F5;
 }
 
 .accordion-header {
   background-color: #111A1C;
   border: none
 }
+
 .custom-accordion-item {
   border: none;
   margin-bottom: 1vh;
@@ -573,14 +575,16 @@ color: #E9F8F5;
   color: #ffffff;
 }
 
-.custom-accordion-button:not(.collapsed) { /* Header accordion abierto */
+.custom-accordion-button:not(.collapsed) {
+  /* Header accordion abierto */
   background: linear-gradient(90deg, rgba(0, 255, 200, 0.25), rgba(0, 150, 255, 0.25));
   color: #ffffff;
   box-shadow: inset 0 -1px 0 rgba(0, 255, 200, 0.4);
 }
 
 
-.custom-accordion-button::after { /* Eliminar la flechita default y personalizar */
+.custom-accordion-button::after {
+  /* Eliminar la flechita default y personalizar */
   background-image: none;
   content: '▼';
   font-size: 1.2rem;
@@ -588,7 +592,8 @@ color: #E9F8F5;
   transition: transform 0.3s ease;
 }
 
-.custom-accordion-button:not(.collapsed)::after { /* Rotar flecha al abrir */
+.custom-accordion-button:not(.collapsed)::after {
+  /* Rotar flecha al abrir */
   transform: rotate(180deg);
   color: #00ffc8;
 }
@@ -598,15 +603,15 @@ color: #E9F8F5;
 .container-contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;   
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   background-color: #111A1C;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  margin: 8vh auto;   
+  margin: 8vh auto;
   padding: 4vh 4vw;
   width: 80%;
-  max-width: 800px; 
+  max-width: 800px;
 }
 
 .form-contact {
@@ -622,7 +627,7 @@ color: #E9F8F5;
 }
 
 .form-check-input:checked {
-  background-color: #27B79A;  
+  background-color: #27B79A;
   border-color: #27B79A;
   box-shadow: 0 0 6px rgba(39, 183, 154, 0.6);
 }
@@ -635,11 +640,131 @@ color: #E9F8F5;
 }
 
 .contact-card {
-margin-top: 4vh;
+  margin-top: 4vh;
 }
 
 .contact-card p {
   font-size: 16px;
   font-weight: 400;
   color: #44dbbdb6;
+}
+
+
+@media (max-width: 767px) {
+
+  /* Mobile */
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 14px
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw 4vh;
+    align-items: center;
+  }
+
+  .doble-button .button {
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: start;
+  }
+
+  .carousel-accesories {
+    flex-direction: column;
+    padding: 6vh 4vw;
+    align-self: start;
+  }
+  .container-2column {
+    flex-direction: column;
+    padding: 6vh 4vw;
+  }
+
+  .container-2column img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-3column {
+    flex-direction: column;
+    padding: 6vh 4vw;
+  }
+
+  .carousel-size {
+    height: 30vh;
+  }
+  .beneficios-grid-productos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "graficos graficos"
+      "enfriamiento enfriamiento"
+      "bateria bateria"
+      "diseno diseno"
+      "sonido sonido";
+  }
+
+  .carousel-product {
+    gap: 4vw;
+  }
+
+  .card-product {
+    flex: 0 0 calc(70% - 24px);
+    min-width: calc(70% - 24px);
+  }
+
+  .about-text-container {
+    max-width: 90vw;
+    min-width: auto;
+    padding-bottom: 4vh;
+  }
+
+  .container-text {
+    max-width: 90vw;
+    min-width: auto;
+    align-content: center;
+    padding-bottom: 4vh;
+    text-align: center;
+  }
+
+  .brand-logo {
+    width: 40vw;
+  }
+
+  .footer-brand{
+    flex-direction: column;
+    gap: 40vh;
+  }
+
+  .footer-content, 
+  .footer-links
+  {
+    flex-direction: column;
+    gap: 8vh;
+    align-items: start;
+  }
 }
