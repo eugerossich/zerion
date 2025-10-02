@@ -9,8 +9,6 @@
 
 - 🛠️ Practice project
 
-- 👨‍💻 All of my projects are available at [behance.net/eugeniarossich](behance.net/eugeniarossich)
-
 - 📫 How to reach me **eugerossich@gmail.com**
 
   
