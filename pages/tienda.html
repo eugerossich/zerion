@@ -69,79 +69,79 @@
 
   <main>
     <section class="card text-bg-dark img-overlay-border"> <!-- HERO IMAGE-OVERLAY-->
-      <img src="../assets/tienda.webp" class="card-img img-hero" alt="...">
+      <img src="../assets/tienda-hero.webp" class="card-img img-hero" alt="...">
       <div class="card-img-overlay hero-text">
         <h1>Tienda</h1>
         <h5>Donde el gaming de alto nivel se encuentra con la excelencia del diseño</h5>
       </div>
     </section>
 
-    <section class="container-1column">
-      <div class="carousel"> <!--CAROUSEL-->
-        <div class="title-carousel">
-          <div class="title-text">
-            <h2>Descubrí lo nuevo</h2>
-            <h3>El futuro del gaming móvil</h3>
-          </div>
-
-          <div class="carousel-arrows">
-            <button class=arrow onclick="scrollCarousel(-1)">←</button>
-            <button class=arrow onclick="scrollCarousel(1)">→</button>
-          </div>
+    <section class="carousel container-1column"> <!--CAROUSEL-->
+      <div class="title-carousel">
+        <div class="title-text">
+          <h2>Descubrí lo nuevo</h2>
+          <h3>El futuro del gaming móvil</h3>
         </div>
 
-        <div id="carousel" class="carousel-product">
-          <article class=card-product>
-            <img src="../assets/evo-max.webp" alt="Una imagen del celular Evo max" loading="lazy">
-            <h3>Evo Max</h3>
-            <h4>$1.099.999</h4>
-            <a href="../pages/producto.html" class="button button_primary">Comprar ahora</a>
-          </article>
-
-          <article class="card-product">
-            <img src="../assets/evo-max.webp" alt="Una imagen del celular Volt X">
-            <h3>Volt X</h3>
-            <h4>$1.099.999</h4>
-            <a href="../pages/evo-max.webp" class="button button_primary">Comprar ahora</a>
-          </article>
-
-          <article class="card-product">
-            <img src="../assets/evo-max.webp" alt="Una imagen del celular Neon Pro" loading="lazy">
-            <h3>Neon Pro</h3>
-            <h4>$1.099.999</h4>
-            <a href="../pages/evo-max.webp" class="button button_primary">Comprar ahora</a>
-          </article>
-
-          <article class="card-product">
-            <img src="../assets/evo-max.webp" alt="Una imagen del celular Go Max" loading="lazy">
-            <h3>Go Max</h3>
-            <h4>$1.099.999</h4>
-            <a href="../pages/producto.html" class="button button_primary">Comprar ahora</a>
-          </article>
-
-          <article class="card-product">
-            <img src="../assets/evo-max.webp" alt="Una imagen del celular Infinity" loading="lazy">
-            <h3>Infinity</h3>
-            <h4>$1.099.999</h4>
-            <a href="../pages/producto.html" class="button button_primary">Comprar ahora</a>
-          </article>
+        <div class="carousel-arrows">
+          <button class=arrow onclick="scrollCarousel(-1)">←</button>
+          <button class=arrow onclick="scrollCarousel(1)">→</button>
         </div>
-        <!--Javascript-->
-        <script>
-          const carousel = document.getElementById("carousel");
-
-          function scrollCarousel(direction) {
-            const card = carousel.querySelector(".card-product");
-            if (!card) return;
-
-            const cardWidth = card.getBoundingClientRect().width + 24; // 24px de gap
-            carousel.scrollBy({
-              left: direction * cardWidth,
-              behavior: "smooth"
-            });
-          }
-        </script>
       </div>
+
+      <div id="carousel" class="carousel-product">
+        <article class=card-product>
+          <img src="../assets/evo-max.webp" alt="Una imagen del celular Evo max" loading="lazy">
+          <h3>Evo Max</h3>
+          <h4>$1.099.999</h4>
+          <a href="../pages/producto.html" class="button button_primary">Comprar ahora</a>
+        </article>
+
+        <article class="card-product">
+          <img src="../assets/evo-max.webp" alt="Una imagen del celular Volt X">
+          <h3>Volt X</h3>
+          <h4>$1.099.999</h4>
+          <a href="../pages/evo-max.webp" class="button button_primary">Comprar ahora</a>
+        </article>
+
+        <article class="card-product">
+          <img src="../assets/evo-max.webp" alt="Una imagen del celular Neon Pro" loading="lazy">
+          <h3>Neon Pro</h3>
+          <h4>$1.099.999</h4>
+          <a href="../pages/evo-max.webp" class="button button_primary">Comprar ahora</a>
+        </article>
+
+        <article class="card-product">
+          <img src="../assets/evo-max.webp" alt="Una imagen del celular Go Max" loading="lazy">
+          <h3>Go Max</h3>
+          <h4>$1.099.999</h4>
+          <a href="../pages/producto.html" class="button button_primary">Comprar ahora</a>
+        </article>
+
+        <article class="card-product">
+          <img src="../assets/evo-max.webp" alt="Una imagen del celular Infinity" loading="lazy">
+          <h3>Infinity</h3>
+          <h4>$1.099.999</h4>
+          <a href="../pages/producto.html" class="button button_primary">Comprar ahora</a>
+        </article>
+
+      </div>
+
+      <!--Javascript-->
+      <script>
+        const carousel = document.getElementById("carousel");
+
+        function scrollCarousel(direction) {
+          const card = carousel.querySelector(".card-product");
+          if (!card) return;
+
+          const cardWidth = card.getBoundingClientRect().width + 24; // 24px de gap
+          carousel.scrollBy({
+            left: direction * cardWidth,
+            behavior: "smooth"
+          });
+        }
+      </script>
     </section>
 
 
@@ -149,7 +149,7 @@
     <section class="container-1column"> <!--CAROUSEL ACCESORIES-->
       <h2>Accesorios</h2>
 
-      <div class=" carousel-accesories ">
+      <div class="carousel-accesories ">
         <article class="card-accesories">
           <img src="../assets/accesories-auricular.webp" alt="">
           <h3>Auriculares Pro X</h3>
@@ -190,16 +190,18 @@
     </section>
 
 
-     <section class="card text-bg-dark img-overlay-border"> <!--IMAGE-OVERLAY-->
+    <section class="card text-bg-dark img-overlay-border"> <!--IMAGE-OVERLAY-->
       <div class="card-img-overlay img-overlay-text">
         <h2 class="card-title">Llevá tu juego al próximo nivel</h2>
-        <h5 class="card-text">Experimentá el máximo poder en la palma de tu mano. Celulares diseñados para gamers que buscan velocidad, gráficos inmersivos y estilo sin límites.</h5>
+        <h5 class="card-text">Experimentá el máximo poder en la palma de tu mano. Celulares diseñados para gamers que
+          buscan velocidad, gráficos inmersivos y estilo sin límites.</h5>
         <div class="doble-button">
-          <a href="../pages/producto.html" class="button button_primary">Quiero el mío</a> 
+          <a href="../pages/producto.html" class="button button_primary">Quiero el mío</a>
           <a href="../pages/contacto.html" class="button button_secondary">Visita nuestra tienda</a>
         </div>
       </div>
-      <img src="../assets/joystick.webp" class="card-img img-overlay-height" alt="Imagen de un joystick para celular" loading="lazy">
+      <img src="../assets/joystick.webp" class="card-img img-overlay-height" alt="Imagen de un joystick para celular"
+        loading="lazy">
     </section>
   </main>
 
