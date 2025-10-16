@@ -1,0 +1,47 @@
+/*HEADER*/
+.background-header {
+    background-color: $dark;
+    padding: 2vh 4vw;
+}
+
+nav {
+
+    .navbar-toggler.custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2327B79A' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .header-gap {
+        gap: 40px
+    }
+
+    .header-link {
+        @include font-style(15px, 400, $white);
+    }
+
+    .header-link:hover {
+        color: $primary;
+        text-shadow: 0 0 8px rgba($primary, 0.8);
+    }
+
+    .header-button {
+        background-color: $primary;
+        color: #070b0c;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+    }
+
+    .header-button:hover {
+        color: #070b0c;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 15px;
+        box-shadow: 0 16px 36px #50f3ff80;
+        background: linear-gradient(90deg, #27B79A, #9CDED1);
+    }
+
+}

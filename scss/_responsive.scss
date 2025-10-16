@@ -1,0 +1,160 @@
+/* RESPONSIVE */
+
+@media (max-width: 767px) {
+
+    /*fonts*/
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 14px
+    }
+
+    /*button*/
+    .doble-button {
+        @include flex-container(column, 2vh, 2vh 4vh, center, center);
+
+        .button {
+            width: 250px;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .carousel-accesories {
+        @include flex-container(column, 6vh, 6vh 4vw, center, center);
+    }
+
+    .container-image,
+    .container-2column {
+        @include flex-container(column, 2vh, 1vh 6vw, center, center);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .cta-content {
+        @include flex-container(column, 2vh, 4vh 6vw, center, center);
+        width: 95vw;
+        text-align: center;
+
+        h2 {
+            font-size: 34px;
+        }
+    }
+
+
+    .container-3column {
+        flex-direction: column;
+        padding: 6vh 4vw;
+    }
+
+    .container-text-center-title {
+        max-width: 95vw;
+    }
+
+    .container-cards-about {
+        flex-wrap: wrap;
+        padding: 0 4vw;
+        align-self: start;
+    }
+
+    .card-about {
+        flex-direction: row;
+        text-align: center;
+        width: 50vw;
+        gap: 2vh;
+    }
+
+    .hero-text {
+        padding: 8vh 4vh 4vw;
+        gap: 2vh;
+    }
+
+    .carousel-size {
+        height: auto;
+    }
+
+    .beneficios-grid-productos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "graficos graficos"
+            "enfriamiento enfriamiento"
+            "bateria bateria"
+            "diseno diseno"
+            "sonido sonido";
+    }
+
+    .carousel-product {
+        gap: 4vw;
+    }
+
+    .card-product {
+        flex: 0 0 calc(70% - 24px);
+        min-width: calc(70% - 24px);
+    }
+
+    .about-text-container {
+        max-width: 90vw;
+        min-width: auto;
+        padding-bottom: 4vh;
+    }
+
+    .container-text {
+        max-width: 90vw;
+        min-width: auto;
+        align-content: center;
+        padding-bottom: 4vh;
+        text-align: center;
+    }
+
+    /*logo*/
+    .brand-logo {
+        width: 40vw;
+    }
+
+    /*footer*/
+    footer {
+        padding: 4vw;
+
+        .footer-content {
+            flex-direction: column;
+            padding: 6vh 4vw;
+
+            .footer-links {
+                flex-direction: column;
+                gap: 2vw;
+            }
+
+            .footer-links-section {
+                gap: 3vw;
+            }
+
+        }
+    }
+
+
+}

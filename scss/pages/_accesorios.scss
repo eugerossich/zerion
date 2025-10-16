@@ -1,0 +1,27 @@
+/*-----PAGE ACCESORIOS------*/
+.carousel-accesories {
+    @include flex-container(row, 1vw, 12vh 6vw, center, center);
+
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow-y: visible;
+}
+
+.card-accesories {
+    @include flex-container(column, 12px, 12vh 6vw, center, center);
+}
+
+.card-accesories img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+.price {
+    @include font-style(24px, 600, $white);
+}
+
+.description-product {
+    @include font-style(20px, 600, $white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), -2px 2px 4px rgba(0, 0, 0, 0.6), 2px -2px 4px rgba(0, 0, 0, 0.6), -2px -2px 4px rgba(0, 0, 0, 0.6);
+}

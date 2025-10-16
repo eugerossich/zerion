@@ -1,0 +1,84 @@
+/* FOOTER */
+footer {
+    background-color: $green-dark;
+    width: 100vw;
+
+    .footer-content {
+        @include flex-container(row, 0vh, 12vh 6vw,flex-start,space-between);
+
+
+        .footer-brand {
+            @include flex-container(column, 1.5vh, 1vh 1vw, flex-start,center);
+
+            .brand-logo {
+                width: 140px;
+            }
+
+            p {
+                @include font-style(16px, 500, $accent-dark);
+                text-shadow: 0 0 6px rgba($primary, 0.8);
+            }
+
+            a {
+                img {
+                    width: 28px;
+
+                    &:hover {
+                        width: 34px;
+                    }
+                }
+            }
+
+            .social-media {
+                @include flex-container(row, 1vh, 0vh 0vw,center,center);
+            }
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: row;
+            gap: 12vw;
+
+            .footer-links-section {
+                display: flex;
+                flex-direction: column;
+                gap: 1px;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    color: $text-color;
+                    font-size: 16px;
+
+                    li {
+
+                        a {
+                            @include font-style(14px, 400, $white);
+                            text-shadow: 0 0 8px rgba($primary, 0.8);
+
+                            &:hover {
+                                color: $text-color;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+        @include font-style(16px, 500, $accent-dark);
+        text-shadow: 0 0 8px rgba($primary, 0.8);
+    }
+
+    .footer-copyright {
+        border-top: 0.5px solid rgba($white, 0.2);
+        margin: 0;
+        padding: 4vh;
+        text-align: center;
+    }
+}

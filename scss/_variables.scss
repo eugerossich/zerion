@@ -1,0 +1,76 @@
+/*reset-CSS*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* COLOR */
+$primary: #69FFD7;
+$primary-dark: #00d186;
+$accent: #00d186;
+$accent-dark: #0ed6a4;
+$white: #E9F8F5;
+$white-dark: #d9f3ee;
+$green-dark: #1F3032;
+$dark: #0D1415;
+$text-color: #44dbbd;
+$shadow-glow: rgba($primary, 0.8);
+
+
+/*FONT FAMILY*/
+
+@mixin font-style ($font-size,$font-weight,$color) {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  text-decoration: none;
+  font-weight: $font-weight;
+  letter-spacing:-0.02em;
+  line-height: 1.5;
+  font-style: normal;
+  font-size: $font-size;
+  color: $color;
+}
+
+
+h1 {
+  @include font-style(72px,900,$white);
+  background-clip: text;
+  background: radial-gradient(circle at center, #31BFA3 0%, #ebf9fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word
+}
+
+h2 {
+  @include font-style(60px,700,$white);
+  text-shadow: #50f3ff98 0px 0px 16px;
+}
+
+h3 {
+  @include font-style(29px,600,$white);
+}
+
+h4 {
+  @include font-style(24px,600,$white);
+}
+
+h5 {
+  @include font-style(20px,600,$white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), -2px 2px 4px rgba(0, 0, 0, 0.6), 2px -2px 4px rgba(0, 0, 0, 0.6), -2px -2px 4px rgba(0, 0, 0, 0.6);
+}
+
+h6 {
+  @include font-style(16px,500,$white);
+}
+
+p {
+  @include font-style(20px,400,$white);
+}
+
+.caption{
+  @include font-style(48px,800,$primary);
+}
+

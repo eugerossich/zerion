@@ -1,0 +1,19 @@
+{
+  "name": "zerion",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Eugenia Rossich</h1>\r <h3 align=\"center\">Graphic designer and web development student</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugerossich/zerion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugerossich/zerion/issues"
+  },
+  "homepage": "https://github.com/eugerossich/zerion#readme"
+}

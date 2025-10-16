@@ -15,7 +15,7 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
   <!--CSS-->
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/main.css">
 
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -172,7 +172,7 @@
           quebuscan velocidad, gráficos inmersivos y estilo sin límites.</p>
         <div class="doble-button">
           <a href="./producto.html" class="button button_primary">Quiero el mío</a>
-          <a href="./contacto.html" class="button button_secondary_opacity">Visita nuestra tienda</a>
+          <a href="./contacto.html" class="button button_secondary">Visita nuestra tienda</a>
         </div>
       </div>
       <img src="../assets/joystick.webp" class="card-img img-overlay-height" alt="Imagen de un joystick para celular"
@@ -186,9 +186,14 @@
       <section class="footer-brand"> <!--LOGOTIPO Y REDES-->
         <img class="brand-logo" src="../assets/zerion.svg" alt="Logotipo de Zerion">
         <p>Síguenos en nuestras redes sociales</p>
-        <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="../assets/instagram.svg"alt="Instagram"></a>
-        <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="../assets/facebook.svg"alt="Facebook"></a>
-        <a href="http://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src="../assets/youtube.svg" alt="Youtube"></a>
+        <div class="social-media">
+          <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img
+              src="../assets/instagram.svg" alt="Instagram"></a>
+          <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="../assets/facebook.svg"
+              alt="Facebook"></a>
+          <a href="http://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src="../assets/youtube.svg"
+              alt="Youtube"></a>
+        </div>
       </section>
 
       <section class="footer-links"> <!--LINKS-->
@@ -229,6 +234,7 @@
     <p class="footer-copyright">© 2025 Zerion. Todos los derechos reservados.</p> <!--COPYRIGHT-->
   </footer>
 
+  <!--Javascript-->
   <!--BOOTSTRAP-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -237,6 +243,20 @@
     integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
     crossorigin="anonymous"></script>
 
+  <!-- SCROLL ANIMATION -->
+  <script>
+    const reveals = document.querySelectorAll('.scroll-reveal');
+    function revealOnScroll() {
+      reveals.forEach(el => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 120) el.classList.add("visible");
+        else el.classList.remove("visible");
+      });
+    }
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
 </body>
 
 </html>

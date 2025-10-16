@@ -1,0 +1,41 @@
+/*GRID BENEFICIOS*/
+.beneficios-grid-productos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+    grid-template-areas:
+        "graficos graficos graficos enfriamiento enfriamiento enfriamiento"
+        "graficos graficos graficos bateria bateria bateria"
+        "diseno diseno sonido sonido sonido sonido";
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+.grid-area-graficos {
+    grid-area: graficos;
+}
+
+.grid-area-enfriamiento {
+    grid-area: enfriamiento;
+}
+
+.grid-area-bateria {
+    grid-area: bateria;
+}
+
+.grid-area-diseno {
+    grid-area: diseno;
+}
+
+.grid-area-sonido {
+    grid-area: sonido;
+}
+
+
+

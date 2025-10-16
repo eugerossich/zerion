@@ -1,0 +1,66 @@
+.accordion-item,
+.accordion-button,
+.accordion-button:focus,
+.accordion-button:active {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.text-accordion {
+    background-color: $dark;
+    color: #E9F8F5;
+}
+
+.accordion-header {
+    background-color: $dark;
+    border: none
+}
+
+.custom-accordion-item {
+    border: none;
+    margin-bottom: 1vh;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: $accent;
+    border: none
+}
+
+.custom-accordion-button {
+    background: rgba(10, 15, 20, 0.8);
+    color: $accent-dark;
+    font-weight: 600;
+    border: none;
+    box-shadow: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: rgba($dark, 0.15);
+        color: $white;
+    }
+}
+
+
+
+.custom-accordion-button:not(.collapsed) {
+    /* Header accordion abierto */
+    background: linear-gradient(90deg, rgba(0, 255, 200, 0.25), rgba(0, 150, 255, 0.25));
+    color: $white;
+    box-shadow: inset 0 -1px 0 rgba(0, 255, 200, 0.4);
+}
+
+
+.custom-accordion-button::after {
+    /* Eliminar la flechita default y personalizar */
+    background-image: none;
+    content: '▼';
+    font-size: 1.2rem;
+    color: #9be7ff;
+    transition: transform 0.3s ease;
+}
+
+.custom-accordion-button:not(.collapsed)::after {
+    /* Rotar flecha al abrir */
+    transform: rotate(180deg);
+    color: $accent;
+}

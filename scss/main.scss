@@ -1,0 +1,26 @@
+// COLOR, TYPOGRAPHY
+@import "variables";
+
+// BASE CONTAINERS-MIXINGS
+@import "general";
+
+// COMPONENTS
+@import "components/button";
+@import "components/header";
+@import "components/footer";
+@import "components/carousel-cards";
+@import "components/accordion";
+
+// PAGES
+@import "pages/home";
+@import "pages/accesorios";
+@import "pages/tienda";
+@import "pages/quienes-somos";
+@import "pages/contacto";
+@import "pages/producto";
+
+
+//RESPONSIVE
+@import "responsive";
+
+

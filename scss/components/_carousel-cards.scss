@@ -1,0 +1,126 @@
+/*CAROUSEL*/
+.carousel {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2vw;
+}
+
+.title-carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 4vh;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-arrows {
+  display: flex;
+  gap: 2vh;
+
+  button {
+    font-size: 24px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #1F3032;
+    color: $white;
+    border: none;
+    border-radius: 12px;
+  }
+}
+
+
+.carousel-product {
+  display: flex;
+  gap: 1vw;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel-product::-webkit-scrollbar {
+  display: none;
+  /* Chrome/Safari */
+}
+
+.card-product {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(24% - 24px);
+  /* 4 cards visible */
+  min-width: calc(24% - 24px);
+  text-align: center;
+  overflow-y: visible;
+  gap: 2vh;
+  align-items: center;
+
+  img {
+    width: 100%;
+    border-radius: 24px;
+    margin-bottom: 12px;
+
+  }
+}
+
+
+/* --- Hover general de las cards --- */
+.card-about,
+.card-text-center {
+  transform: translateY(0);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+
+.card-about:hover,
+.card-text-center:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 16px 32px rgba($green-dark, 0.25);
+  cursor: pointer;
+}
+
+
+
+/*CARD OVERLAY*/
+.img-overlay-border {
+  border: none;
+}
+
+.img-overlay-height {
+  height: 70vh;
+  object-fit: cover;
+  display: block;
+}
+
+.img-overlay-container-text {
+  @include flex-container(column, 0.5vh, 2vh 4vw, center, center);
+
+  p {
+    @include font-style(20px, 600, $white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), -2px 2px 4px rgba(0, 0, 0, 0.6), 2px -2px 4px rgba(0, 0, 0, 0.6), -2px -2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+}
+
+
+
+
+/*HERO*/
+.img-hero {
+  height: 90vh;
+  object-fit: cover;
+}
+
+.hero-text {
+  @include flex-container(column, 1vh, 8vh 4vw, center, start);
+
+  p {
+    @include font-style(20px, 400, $white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), -2px 2px 4px rgba(0, 0, 0, 0.6), 2px -2px 4px rgba(0, 0, 0, 0.6), -2px -2px 4px rgba(0, 0, 0, 0.6);
+  }
+}

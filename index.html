@@ -15,7 +15,7 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
   <!--CSS-->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
 
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,30 +69,30 @@
 
   <main>
     <section class="card text-bg-dark img-overlay-border"> <!-- HERO IMAGE-OVERLAY-->
-      <img src="./assets/hero-home.webp" class="card-img img-hero" alt="una imagen de un celular gamer">
+      <img src="./assets/hero-home.webp" class="card-img img-hero " alt="una imagen de un celular gamer">
       <div class="card-img-overlay hero-text">
         <h1>Celulares Gaming de Alto Rendimiento</h1>
-        <p>Cada partida cobra vida con celulares gamer que combinan tecnología avanzada, respuesta ultra rápida y un
-          diseño pensado para jugadores exigentes.</p>
+        <p>Smartphones gaming con potencia extrema, velocidad ultra rápida y un diseño creado para jugadores exigentes
+        </p>
         <div class="doble-button">
           <a href="./pages/tienda.html" class="button button_primary">Ver nuestros celulares</a> <a
-            href="./pages/contacto.html" class="button button_secondary_opacity">Visita nuestra tienda</a>
+            href="./pages/contacto.html" class="button button_secondary">Visita nuestra tienda</a>
         </div>
       </div>
     </section>
 
     <section class="container-1column"> <!--BENEFITS-->
       <h2>Gaming en otra dimensión</h2>
-      <div class="beneficios-grid-productos">
-        <img src="./assets/beneficios-graficos.png" class=grid-area-graficos
+      <div class="beneficios-grid-productos scroll-reveal">
+        <img src="./assets/beneficios-graficos.png" class="grid-area-graficos scroll-reveal glow-img"
           alt="Celular gamer con pantalla NeoVision OLED 180 Hz mostrando gráficos AAA en alta definición">
-        <img src="./assets/beneficios-enfriamiento.png" class=grid-area-enfriamiento
+        <img src="./assets/beneficios-enfriamiento.png" class="grid-area-enfriamiento scroll-reveal glow-img"
           alt="Sistema CryoFlow 5D Cooling en celular gaming con microcanales líquidos y disipación térmica avanzada">
-        <img src="./assets/beneficios-bateria.png" class=grid-area-bateria
+        <img src="./assets/beneficios-bateria.png" class="grid-area-bateria scroll-reveal glow-img"
           alt="Batería de larga duración con energía optimizada para largas horas de juego en celular gamer">
-        <img src="./assets/beneficios-diseno.png" class=grid-area-diseno
+        <img src="./assets/beneficios-diseno.png" class="grid-area-diseno scroll-reveal glow-img"
           alt="Celular gaming con diseño premium y acabados modernos en cámara trasera">
-        <img src="./assets/beneficios-sonido.png" class=grid-area-sonido
+        <img src="./assets/beneficios-sonido.png" class="grid-area-sonido scroll-reveal glow-img"
           alt="Experiencia de sonido 3D inmersivo en celular gamer con altavoces optimizados para gaming">
       </div>
     </section>
@@ -133,38 +133,22 @@
         </article>
 
         <article class="card-product">
-          <img src="./assets/evo-max.webp" alt="Una imagen del celular Go Max" loading="lazy">
+          <img src="./assets/go-max.webp" alt="Una imagen del celular Go Max" loading="lazy">
           <h3>Go Max</h3>
           <p class="price">$1.099.999</p>
           <a href="./pages/producto.html" class="button button_primary">Comprar ahora</a>
         </article>
 
         <article class="card-product">
-          <img src="./assets/volt-x.webp" alt="Una imagen del celular Infinity" loading="lazy">
+          <img src="./assets/infinity.webp" alt="Una imagen del celular Infinity" loading="lazy">
           <h3>Infinity</h3>
           <p class="price">$1.099.999</p>
           <a href="./pages/producto.html" class="button button_primary">Comprar ahora</a>
         </article>
 
       </div>
-
-
-      <!--Javascript-->
-      <script>
-        const carousel = document.getElementById("carousel");
-
-        function scrollCarousel(direction) {
-          const card = carousel.querySelector(".card-product");
-          if (!card) return;
-
-          const cardWidth = card.getBoundingClientRect().width + 24; // 24px de gap
-          carousel.scrollBy({
-            left: direction * cardWidth,
-            behavior: "smooth"
-          });
-        }
-      </script>
     </section>
+
 
 
 
@@ -184,15 +168,15 @@
     </section>
 
 
-    
+
     <section class="card text-bg-dark img-overlay-border"> <!--IMAGE-OVERLAY-->
       <div class="card-img-overlay img-overlay-container-text">
         <h2 class="card-title">Llevá tu juego al próximo nivel</h2>
         <p class="card-text">Experimentá el máximo poder en la palma de tu mano. Celulares diseñados para gamers que
           buscan velocidad, gráficos inmersivos y estilo sin límites.</p>
-        <div class="doble-button">
-          <a href="./pages/producto.html" class="button button_primary">Quiero el mío</a>
-          <a href="./pages/contacto.html" class="button button_secondary_opacity">Visita nuestra tienda</a>
+         <div class="doble-button">
+          <a href="./pages/tienda.html" class="button button_primary">Nuestros celulares</a> <a
+            href="./pages/contacto.html" class="button button_secondary">Contacto</a>
         </div>
       </div>
       <img src="./assets/joystick.webp" class="card-img img-overlay-height" alt="Imagen de un joystick para celular"
@@ -206,12 +190,14 @@
       <section class="footer-brand"> <!--LOGOTIPO Y REDES-->
         <img class="brand-logo" src="./assets/zerion.svg" alt="Logotipo de Zerion">
         <p>Síguenos en nuestras redes sociales</p>
-        <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="./assets/instagram.svg"
-            alt="Instagram"></a>
-        <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="./assets/facebook.svg"
-            alt="Facebook"></a>
-        <a href="http://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src="./assets/youtube.svg"
-            alt="Youtube"></a>
+        <div class="social-media">
+          <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="./assets/instagram.svg"
+              alt="Instagram"></a>
+          <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="./assets/facebook.svg"
+              alt="Facebook"></a>
+          <a href="http://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src="./assets/youtube.svg"
+              alt="Youtube"></a>
+        </div>
       </section>
 
       <section class="footer-links"> <!--LINKS-->
@@ -252,6 +238,8 @@
     <p class="footer-copyright">© 2025 Zerion. Todos los derechos reservados.</p> <!--COPYRIGHT-->
   </footer>
 
+
+  <!--Javascript-->
   <!--BOOTSTRAP-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -259,6 +247,37 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
     integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
     crossorigin="anonymous"></script>
+
+  <!-- SCROLL ANIMATION -->
+  <script>
+    const reveals = document.querySelectorAll('.scroll-reveal');
+    function revealOnScroll() {
+      reveals.forEach(el => {
+        const windowHeight = window.innerHeight;
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 120) el.classList.add("visible");
+        else el.classList.remove("visible");
+      });
+    }
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
+
+  <!--CAROUSEL-->
+  <script>
+    const carousel = document.getElementById("carousel");
+
+    function scrollCarousel(direction) {
+      const card = carousel.querySelector(".card-product");
+      if (!card) return;
+
+      const cardWidth = card.getBoundingClientRect().width + 24; // 24px de gap
+      carousel.scrollBy({
+        left: direction * cardWidth,
+        behavior: "smooth"
+      });
+    }
+  </script>
 </body>
 
 </html>

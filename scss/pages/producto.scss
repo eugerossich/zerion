@@ -1,0 +1,33 @@
+.container-text {
+  max-width: 40vw;
+  align-content: center;
+
+  h3 {
+    font-size: 32px;
+    color: $accent;
+  }
+}
+
+
+.card-text-center {
+  @include flex-container(column, 1vh, 2vh 2vw, center, center);
+  border: 0.4px solid rgba($primary, 0.2);
+  background: linear-gradient(180deg, $dark,$green-dark);
+  color: $white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  border-radius: 16px;
+  flex: 1;
+}
+
+.carousel-size {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+}
+
+.card-text-center:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
+}
