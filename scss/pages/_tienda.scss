@@ -6,7 +6,7 @@
 }
 
 .card-accesories {
-  @include flex-container(column, 4px, 0vh 0vw, center, center);
+  @include flex-container(column, 1vh, 0vh 0vw, center, center);
 
   img {
     width: 100%;
@@ -14,11 +14,11 @@
   }
 
   .price {
-    @include font-style(24px,600,$white);
+    @include font-style(24px, 600, $white);
   }
 
   .description-product {
-    @include font-style(20px,400, $white-dark);
+    @include font-style(20px, 400, $white-dark);
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6), -2px 2px 4px rgba(0, 0, 0, 0.6), 2px -2px 4px rgba(0, 0, 0, 0.6), -2px -2px 4px rgba(0, 0, 0, 0.6);
   }

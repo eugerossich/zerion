@@ -12,7 +12,7 @@
 .card-text-center {
   @include flex-container(column, 1vh, 2vh 2vw, center, center);
   border: 0.4px solid rgba($primary, 0.2);
-  background: linear-gradient(180deg, $dark,$green-dark);
+  background: linear-gradient(180deg, $dark, $green-dark);
   color: $white;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;

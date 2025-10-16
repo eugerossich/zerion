@@ -729,7 +729,7 @@ footer .footer-copyright {
 .card-accesories {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 1vh;
   padding: 0vh 0vw;
   align-items: center;
   justify-content: center;
