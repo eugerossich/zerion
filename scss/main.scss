@@ -1,8 +1,11 @@
+// RESET
+@import "abstracts/reset";
+
 // COLOR, TYPOGRAPHY
-@import "variables";
+@import "abstracts/variables";
 
 // BASE CONTAINERS-MIXINGS
-@import "general";
+@import "abstracts/general";
 
 // COMPONENTS
 @import "components/button";
@@ -21,4 +24,4 @@
 
 
 //RESPONSIVE
-@import "responsive";
+@import "utilities/responsive";

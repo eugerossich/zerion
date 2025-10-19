@@ -1,10 +1,3 @@
-/*reset-CSS*/
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 /* COLOR */
 $primary: #69FFD7;
 $primary-dark: #00d186;
@@ -21,15 +14,10 @@ $shadow-glow: rgba($primary, 0.8);
 /*FONT FAMILY*/
 
 @mixin font-style ($font-size,$font-weight,$color) {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  text-decoration: none;
   font-weight: $font-weight;
-  letter-spacing:-0.02em;
-  line-height: 1.5;
-  font-style: normal;
   font-size: $font-size;
   color: $color;
+  text-decoration: none;
 }
 
 
