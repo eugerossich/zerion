@@ -131,6 +131,15 @@
         text-align: center;
     }
 
+    /*cards sprecs*/
+    .features-container {
+        grid-template-columns: 1fr;
+        gap: 2vh;
+        padding: 0.5vh 4vw;
+        margin: 12vw;
+        height: auto;
+    }
+
     /*logo*/
     .brand-logo {
         width: 40vw;
