@@ -1,6 +1,16 @@
 /*-----PAGE CONTACTO------*/
+
+.background-contact {
+  background-image: url("../assets/accordion.webp");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+
+}
+
 .container-contact-form {
-  @include flex-container(column, 4px, 4vh 4vw, center, center);
+  @include flex-container(column, 4vh, 4vh 4vw, center, center);
   background-color: $dark;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -40,7 +50,7 @@
   p {
     font-size: 16px;
     font-weight: 400;
-    color: #44dbbdb6;
+    color: rgba($text-color, 0.6);
   }
 
 }

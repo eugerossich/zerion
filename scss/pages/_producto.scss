@@ -8,7 +8,6 @@
   }
 }
 
-
 .card-text-center {
   @include flex-container(column, 1vh, 2vh 2vw, center, center);
   border: 0.4px solid rgba($primary, 0.2);
@@ -18,6 +17,7 @@
   text-align: center;
   border-radius: 16px;
   flex: 1;
+  width: 100%;
 
   & hover {
     transform: translateY(-5px);
@@ -25,12 +25,6 @@
   }
 }
 
-.carousel-size {
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  height: 80vh;
-}
 
 .features-container {
   display: grid;
@@ -56,4 +50,20 @@
     }
   }
 
+}
+
+.carousel-ajust {
+  margin: 0;
+  padding: 0;
+  
+  img {
+  height: 80vh;           
+  object-fit: cover;  
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgba(16, 25, 34, 1) 5%, rgba(16, 25, 34, 0) 80%);
+  }
+
+  .carousel-text {
+    padding-bottom: 10vh;
+  }
 }

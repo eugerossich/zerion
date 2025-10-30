@@ -2,14 +2,14 @@
 .accordion-button,
 .accordion-button:focus,
 .accordion-button:active {
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
+    border: none ;
+    box-shadow: none ;
+    outline: none;
 }
 
 .text-accordion {
     background-color: $dark;
-    color: #E9F8F5;
+    color: $white;
 }
 
 .accordion-header {

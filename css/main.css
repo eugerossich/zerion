@@ -161,7 +161,7 @@ body {
   transform: scale(1);
 }
 
-/* --- IMAGENES EFECTO ZOOM-GLO --- */
+/* --- IMAGENES EFECTO ZOOM-GLOW --- */
 .glow-img {
   transition: transform 0.6s ease, filter 0.6s ease;
 }
@@ -499,9 +499,9 @@ footer .footer-copyright {
 .accordion-button,
 .accordion-button:focus,
 .accordion-button:active {
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
+  border: none;
+  box-shadow: none;
+  outline: none;
 }
 
 .text-accordion {
@@ -678,9 +678,10 @@ footer .footer-copyright {
 .container-text-center {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 8vh 4vw;
   gap: 4vh;
+  padding: 8vh 4vw;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-text-center-title {
@@ -692,41 +693,52 @@ footer .footer-copyright {
 
 .img-about {
   width: 100vw;
-  height: 50vh;
+  height: 80vh;
   overflow: hidden;
   object-fit: cover;
   object-position: center;
-  display: block;
 }
 
 .container-cards-about {
   display: flex;
   flex-direction: row;
   gap: 1vh;
+  padding: 0vh 0vw;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-about {
   display: flex;
   flex-direction: column;
+  gap: 0vw;
+  padding: 2vh 2vw;
   align-items: center;
+  justify-content: center;
   border: 1px solid #BABFBF;
   background: linear-gradient(90deg, rgba(105, 255, 215, 0.034), rgba(158, 231, 255, 0.15));
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: linear-gradient(90deg, rgba(105, 255, 216, 0.15), rgba(158, 231, 255, 0.15));
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  padding: 2vh 2vw;
   text-align: center;
   border-radius: 16px;
-  gap: 0;
   white-space: nowrap;
   flex: 1;
 }
 
 /*-----PAGE CONTACTO------*/
+.background-contact {
+  background-image: url("../assets/accordion.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .container-contact-form {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 4vh;
   padding: 4vh 4vw;
   align-items: center;
   justify-content: center;
@@ -769,7 +781,7 @@ footer .footer-copyright {
 .contact-card p {
   font-size: 16px;
   font-weight: 400;
-  color: rgba(68, 219, 189, 0.7137254902);
+  color: rgba(68, 219, 189, 0.6);
 }
 
 .container-text {
@@ -795,17 +807,11 @@ footer .footer-copyright {
   text-align: center;
   border-radius: 16px;
   flex: 1;
+  width: 100%;
 }
 .card-text-center hover {
   transform: translateY(-5px);
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
-}
-
-.carousel-size {
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  height: 80vh;
 }
 
 .features-container {
@@ -834,6 +840,20 @@ footer .footer-copyright {
   margin-bottom: 15px;
   height: 50px;
   width: auto;
+}
+
+.carousel-ajust {
+  margin: 0;
+  padding: 0;
+}
+.carousel-ajust img {
+  height: 80vh;
+  object-fit: cover;
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgb(16, 25, 34) 5%, rgba(16, 25, 34, 0) 80%);
+}
+.carousel-ajust .carousel-text {
+  padding-bottom: 10vh;
 }
 
 /* RESPONSIVE */
@@ -930,9 +950,6 @@ footer .footer-copyright {
   .hero-text {
     padding: 8vh 4vh 4vw;
     gap: 2vh;
-  }
-  .carousel-size {
-    height: auto;
   }
   .beneficios-grid-productos {
     grid-template-columns: repeat(2, 1fr);
